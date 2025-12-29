@@ -1,0 +1,130 @@
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #f5f2f2;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 6px 6px 6px 6px 6px ;
+    grid-template-rows: replace(2, 10px);
+    gap: 20px 240px;
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#results-container {
+    margin-top: 20px;
+    font-size: bold;
+}
+
+.tarjeta {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 180px;
+    height: 400px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.25);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+}
+
+.duracion {
+    font-size: 14px;
+    color: white;
+    font-style: Bold;
+    margin-top: -10px;
+    padding: 10px;
+    background-color: #555;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.destacado {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.pie-tarjeta {
+    text-align: end;
+    margin-top: 15px;
+    font-size: small;
+    color: rgb(72, 70, 70);
+    font-style: italic;
+    font-style: bold;
+}
+h1 {
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif;
+
+}
+h2 {
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 18px;
+    color: #55398a;
+}
+h3{
+    text-align: center;
+}
+.travel{
+    font-size: 40 px;
+    font-weight: bold;
+}
+
+#oferta-dinamica{
+    font-size:  30px;
+    text-align: center;
+    background-color: red;
+    color: bisque;
+    height: 40px;
+    padding: 10px, 10px,20px, 20px;
+}
+    
+#viaje_seleccionado{
+    border: 4px solid rgb(95, 27, 27);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.1);
+    transition: transform 0.2s;
+    width: 1120px;
+    height: 100px;
+    text-align: justify;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#resultado_compra{
+    background-color: aquamarine;    
+    font-size:  20px;
+    text-align: center;
+    background-color: purple;
+    color: bisque;
+    padding: 10px, 10px,20px, 20px;}
+
+.oferta{
+    cursor:pointer;
+    font-size: small;
+    border: #000000 solid;
+    text-align: center;
+    background-color: rgb(218, 223, 223);
+}
