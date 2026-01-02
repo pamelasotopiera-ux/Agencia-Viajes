@@ -1,9 +1,16 @@
 <?php
 function cargardatos($id_vuelo, $Fecha, $origen, $destino){
+if (validarDatos($id_vuelo, $Fecha, $origen, $destino)==False{
+return "No hay coincidencias con la BBDD"
+
+$consulta = {"ID": $id_vuelo, "fecha": $Fecha, "origen": $origen, "destino": $destino}
+return $consulta
+
 //rescata los datos ingresados por formulario.
 // detro de esta función se debe llamar a validarDatos().
 //retorna un objeto con los parámetros de búsqueda
 };
+
 function validarDatos($id_vuelo, $Fecha, $origen, $destino){
 // validar si los campos no están vacíos
 // validar formato de fecha
