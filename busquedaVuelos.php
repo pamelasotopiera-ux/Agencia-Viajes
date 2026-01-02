@@ -1,34 +1,42 @@
 <?php
 function cargardatos($id_vuelo, $Fecha, $origen, $destino){
-if (validarDatos($id_vuelo, $Fecha, $origen, $destino)==False{
-return "No hay coincidencias con la BBDD"
-
-$consulta = {"ID": $id_vuelo, "fecha": $Fecha, "origen": $origen, "destino": $destino}
-return $consulta
-
 //rescata los datos ingresados por formulario.
-// detro de esta función se debe llamar a validarDatos().
-//retorna un objeto con los parámetros de búsqueda
-};
 
+// detro de esta función se debe llamar a validarDatos().
+};
 function validarDatos($id_vuelo, $Fecha, $origen, $destino){
-// validar si los campos no están vacíos
+    // validar si los campos no están vacíos
+    if ($nombre == "" || $lugar === "" || $cupos === "" || $tarifa === "") {
+      alert("Todos los campos deben estar completos. Revise los datos.");
+      return false;
+
+   }
+   if ($cupos <= 0 || $tarifa <= 0) {
+      alert("Las habitaciones disponibles y la tarifa deben ser mayores que 0");
+      return false;
+   }
+
+   if ($tarifa > 500000) {
+      alert("No deben registrarse tarifas por monto superior a $500.000");
+      return false;
+   }
+   if ($cupos > 1000) {
+      alert("No deben registrarse hoteles con capacidad superior a 1000 cupos");
+      return false;
+   }
+
+
 // validar formato de fecha
 // validar que el origen y destino sean diferentes
 // retornar true si todo es válido, false en caso contrario
 } ;
-function cargarVuelos(){
+function cargarVuelos(
     //Cargar los vuelos desde la base de datos.
     // Se busca el match con los datos ingresados.
     //imprime mnesaje  de error si no hay vuelos disponibles.
-			//retorna un array de vuelos
-};
+){};
 
-function compararConsulta(arrayVuelosBBDD, objetoConsulta){
-		//recibe desde cargar datos los parámetros de consulta
-		//y compara contra el array de cargar vuelos
-		//retorna un array de vuelos que coinciden con la bùsqueda
-		//o un array vacío si no existen coincidencias}
+
 
 
 
